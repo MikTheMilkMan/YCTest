@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function beginnen() {
+            var zelfkiezen = document.getElementById("zoekveld").value;
+            console.log(zelfkiezen);
+            document.getElementById("welkom").innerHTML = "<h1> Welkom, " + zelfkiezen + "</h1>";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="beginnen()">lets go</button>
+
+    <input type="text" id="zoekveld">
+
+    <br><br>
+
+    <h1 id="welkom"></h1>
+</body>
+</html>
